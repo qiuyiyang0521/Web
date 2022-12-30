@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="懒得写">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="http://example.com/about/index.html">
+  <meta name="description" content="在平常发文章时，Hexo的主页通常会直接显示全文，这并不美观，所以这里记录一下解决方法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文章显示摘要">
+<meta property="og:url" content="http://example.com/2022/12/30/%E6%96%87%E7%AB%A0%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81/index.html">
 <meta property="og:site_name" content="邱一阳的个人博客">
-<meta property="og:description" content="懒得写">
+<meta property="og:description" content="在平常发文章时，Hexo的主页通常会直接显示全文，这并不美观，所以这里记录一下解决方法。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-12-29T12:54:01.000Z">
-<meta property="article:modified_time" content="2022-12-30T15:10:28.007Z">
+<meta property="article:published_time" content="2022-12-30T15:47:17.000Z">
+<meta property="article:modified_time" content="2022-12-30T16:05:04.877Z">
 <meta property="article:author" content="邱一阳">
-<meta property="article:tag" content="邱一阳">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/about/">
+<link rel="canonical" href="http://example.com/2022/12/30/%E6%96%87%E7%AB%A0%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81/">
 
 
 <script id="page-configurations">
@@ -41,13 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>关于 | 邱一阳的个人博客
-</title>
+  <title>文章显示摘要 | 邱一阳的个人博客</title>
   
 
 
@@ -160,44 +159,106 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/30/%E6%96%87%E7%AB%A0%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="邱一阳">
+      <meta itemprop="description" content="这是邱一阳的个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="邱一阳的个人博客">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          文章显示摘要
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">关于
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
 
-<div class="post-meta">
+              <time title="创建时间：2022-12-30 23:47:17" itemprop="dateCreated datePublished" datetime="2022-12-30T23:47:17+08:00">2022-12-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 00:05:04" itemprop="dateModified" datetime="2022-12-31T00:05:04+08:00">2022-12-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>在平常发文章时，Hexo的主页通常会直接<strong>显示全文</strong>，这<strong>并不美观</strong>，所以这里记录一下<u>解决方法</u>。</p>
+<span id="more"></span>
+
+<p>[TOC]</p>
+<blockquote>
+<p>此方法对Next主题必然有用，别的在主题就不一定了（理论上是通用的）。</p>
+</blockquote>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>打开Next配置文件<code>_config.yml</code>，找到这行。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span></span><br><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>把<code>excerpt_description:</code>后面设置成<code>true</code>，注意前面有个空格。</p>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>在文章的配置部分加上<code>description</code>属性，主页只会显示<code>description</code>后的内容。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">让首页显示部分内容</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">20xx-xx-xx</span> <span class="string">xx:xx:xx</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">这是显示在首页的概述，正文内容均会被隐藏。</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>在想要截断的地方加上<code>&lt;!--more--&gt;</code>，上面的内容会显示，下面的会隐藏。</p>
+<blockquote>
+<p>本文借鉴于<a target="_blank" rel="noopener" href="https://blog.csdn.net/yueyue200830/article/details/104470646">设置hexo首页只显示部分摘要（不显示全文）</a></p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/12/30/%E6%B5%8B%E8%AF%95markdown/" rel="prev" title="测试Markdown">
+      <i class="fa fa-chevron-left"></i> 测试Markdown
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <p>懒得写</p>
-
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -248,6 +309,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80"><span class="nav-number">2.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="nav-number">2.2.</span> <span class="nav-text">方法二</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
